@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  nombre: string = 'pancho';
+  nombre: string = 'Pancho';
   valor: number = 1000;
 
   mostrarNombre(){
-    console.log(this.nombre);
+    console.log( this.nombre );
   }
 }
