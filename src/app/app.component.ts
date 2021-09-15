@@ -9,6 +9,9 @@ export class AppComponent {
   
   nombre: string = 'Pancho';
   valor: number = 1000;
+  obj = {
+    nombre: 'Fernando'
+  }
 
   mostrarNombre(){
     console.log( this.nombre );
