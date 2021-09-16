@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 
 //modulo personalizado
 import { SharedModule } from './shared/shared.module';
+import { AppRouterModule } from './app-router.module';
 
 
 
@@ -14,6 +15,7 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
+    AppRouterModule,
     SharedModule
   ],
   providers: [],
