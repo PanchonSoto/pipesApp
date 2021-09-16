@@ -16,4 +16,7 @@ export class AppComponent {
   mostrarNombre(){
     console.log( this.nombre );
   }
+
+  
+  
 }
