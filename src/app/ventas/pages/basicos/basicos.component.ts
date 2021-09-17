@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class BasicosComponent implements OnInit {
+export class BasicosComponent {
 
-  constructor() { }
+  nombreLower: string = 'pancho';
+  nombreUpper: string = 'PANCHO';
+  nombreCompleto: string = 'pAnCHo SOto'
 
-  ngOnInit(): void {
-  }
+  fecha: Date = new Date();
 
 }
