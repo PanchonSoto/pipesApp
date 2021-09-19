@@ -1,7 +1,6 @@
 <div class="text-layout">
     <h1>Pipes personalizados</h1>
     <p>Pipes creados por {{'nosotros'| mayusculas:enMayusculas}}</p>
-
 </div>
 
 <p-toolbar>
@@ -33,21 +32,19 @@
 
 <div class="grid">
     <div class="col mt-2">
-        <p-table [value]="[]" responsiveLayout="scroll">
+        <p-table [value]="heroes | ordenar" responsiveLayout="scroll">
             <ng-template pTemplate="header">
                 <tr>
-                    <th>Code</th>
-                    <th>Name</th>
-                    <th>Category</th>
-                    <th>Quantity</th>
+                    <th>Nombre</th>
+                    <th>Vuela</th>
+                    <th>Color principal</th>
                 </tr>
             </ng-template>
-            <ng-template pTemplate="body" let-product>
+            <ng-template pTemplate="body" let-heroe>
                 <tr>
-                    <td>{{product.code}}</td>
-                    <td>{{product.name}}</td>
-                    <td>{{product.category}}</td>
-                    <td>{{product.quantity}}</td>
+                    <td>{{heroe.nombre}}</td>
+                    <td>{{(heroe.vuela | vuela) | titlecase}}</td>
+                    <td>{{heroe.color}}</td>
                 </tr>
             </ng-template>
         </p-table>
