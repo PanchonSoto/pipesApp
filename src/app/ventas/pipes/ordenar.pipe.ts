@@ -6,10 +6,10 @@ import { Heroes } from '../interfaces/ventas.interfaces';
 })
 export class OrdenarPipe implements PipeTransform {
 
-  transform(value: Heroes[], orderPor: string): Heroes[] {
+  transform([...value]: Heroes[], orderPor: string): Heroes[] {
 
     switch(orderPor) {
-      
+
       case 'nombre':
         return value.sort((a,b)=>(a.nombre > b.nombre) ? 1 : -1);
       
